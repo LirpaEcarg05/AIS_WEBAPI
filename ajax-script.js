@@ -8,7 +8,7 @@ $(document).on('click', '.button', function () {
 
     $.ajax({
         method: "POST",
-        url: "http://192.168.0.29:8081/AIS_WEBAPI/php-script.php",
+        url: "http://192.168.0.28/AIS_WEBAPI/php-script.php",
         data: { Fullname: fullname, Email: email, City: city, Country: country },
         success: function (data) {
             alert("InsertSuccesfully!");
@@ -24,7 +24,7 @@ $(document).on('click', '.updateButton', function () {
     var country = $('.country').val();
     $.ajax({
         method: "POST",
-        url: "http://192.168.0.29:8081/AIS_WEBAPI/php-script.php",
+        url: "http://192.168.0.28/AIS_WEBAPI/php-script.php",
         data: { Fullname: fullName, Email: email, City: city, Country: country },
         success: function (data) {
             window.location.replace("userform.php");
@@ -36,7 +36,7 @@ $(document).on('click', '.updateButton', function () {
 
     // $.ajax({
     //     type: 'GET',
-    //     url: 'http://192.168.0.29:8081/AIS_WEBAPI/php-script.php',
+    //     url: 'http://192.168.0.28/AIS_WEBAPI/php-script.php',
     //     dataType: 'json',
     //     success: function (data) {
     //         console.log('ok');

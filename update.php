@@ -11,7 +11,7 @@
 <div class="user-detail">
     <h2>Insert User Data</h2>
     <p id="msg"></p>
-    <form action="http://192.168.0.29:8081/AIS_WEBAPI/php-script.php" method="post">
+    <form action="http://192.168.0.28/AIS_WEBAPI/php-script.php" method="post">
         <input class="fullname" type="hidden" value="<?php echo $_GET["ID"]?>" name="id" required>
           <label>Full Name</label>
           <input class="fullname" type="text" placeholder="Enter Full Name" name="fullname" value="<?php echo $_GET["FullName"]?>" required>
