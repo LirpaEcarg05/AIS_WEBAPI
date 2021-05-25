@@ -8,11 +8,10 @@
 <body>
 <!--====form section start====-->
 
-<div class="user-detail">
+<div class="user-detail"><?php echo $_GET["ID"]?>
     <h2>Insert User Data</h2>
     <p id="msg"></p>
-    <form action="http://192.168.0.29:8081/AIS_WEBAPI/php-script.php" method="post">
-        <input class="fullname" type="hidden" value="<?php echo $_GET["ID"]?>" name="id" required>
+        <input class="id" type="text" value="<?php echo $_GET["ID"]?>" name="id" required>
           <label>Full Name</label>
           <input class="fullname" type="text" placeholder="Enter Full Name" name="fullname" value="<?php echo $_GET["FullName"]?>" required>
           <label>Email Address</label>
@@ -21,10 +20,11 @@
           <input class="city" type="city" placeholder="Enter Full City" name="city" value="<?php echo $_GET["City"]?>" required>
           <label>Country</label>
           <input class="country" type="text" placeholder="Enter Full Country" name="country" value="<?php echo $_GET["Country"]?>" required>
-          <button type="submit" class="updateButton" name="updateBTN">Update</button>
+          <button type="button" class="updateButton" name="updateBTN">Update</button>
     
         </div>
-        </form>
+        
+
 </div>
 
 
