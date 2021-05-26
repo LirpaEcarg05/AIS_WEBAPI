@@ -4,15 +4,25 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+body{
+  background-image: url(https://thumbs.gfycat.com/HalfThunderousFlyingfox-size_restricted.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+</style>
 </head>
 <body>
 <!--====form section start====-->
-
+<br><br><br>
+<center>
 <div class="user-detail">
-    <h2>Insert User Data</h2>
+    <h1>Update User Data</h1>
+    <br><br>
     <p id="msg"></p>
-    <form action="http://192.168.0.28/AIS_WEBAPI/php-script.php" method="post">
-        <input class="fullname" type="hidden" value="<?php echo $_GET["ID"]?>" name="id" required>
+        <input class="id" type="hidden" value="<?php echo $_GET["ID"]?>" name="id" required>
           <label>Full Name</label>
           <input class="fullname" type="text" placeholder="Enter Full Name" name="fullname" value="<?php echo $_GET["FullName"]?>" required>
           <label>Email Address</label>
@@ -21,11 +31,12 @@
           <input class="city" type="city" placeholder="Enter Full City" name="city" value="<?php echo $_GET["City"]?>" required>
           <label>Country</label>
           <input class="country" type="text" placeholder="Enter Full Country" name="country" value="<?php echo $_GET["Country"]?>" required>
-          <button type="submit" class="updateButton" name="updateBTN">Update</button>
+          <button type="button" class="updateButton" name="updateBTN">Update</button>
     
         </div>
-        </form>
 </div>
+</center>
+
 
 
 
